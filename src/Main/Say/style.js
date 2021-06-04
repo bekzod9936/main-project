@@ -24,7 +24,10 @@ line-height: 20px;
 text-align: center;
 color: #696969;
 `;
-
+export const WrapCard=styled.div`
+display: flex;
+justify-content: space-between;
+`;
 export const Card=styled.div`
 width: 345px;
 height: 305px;

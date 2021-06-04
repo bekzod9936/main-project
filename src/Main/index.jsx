@@ -5,15 +5,23 @@ import Category from "./Category";
 import Guides from "./Guides";
 import RecentList from "./RecentList";
 import Say from "./Say";
+import City from "./City";
+import Blog from "./Blog";
+import Agent from "./Agent";
+
+
 const index = () => {
   return (
     <div>
-      {/* <Carusel />
+      <Carusel />
       <Choose />
-      <Category /> */}
-      {/* <Guides /> */}
-      {/* <RecentList /> */}
+      <Category />
+      <Guides />
+      <RecentList />
       <Say />
+      <City />
+      <Agent />
+      <Blog />
     </div>
   )
 }

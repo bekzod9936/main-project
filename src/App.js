@@ -5,9 +5,9 @@ import Main from "./Main";
 function App() {
   return (
     <div style={{width: '1920px' , border: '1px solid'}} >
-     {/* <Header /> */}
+     <Header />
       <Main />
-     {/* <Footer /> */}
+     <Footer />
     </div>
   );
 }
