@@ -6,24 +6,6 @@ padding: 100px 225px;
 background-image: url(${Say});
 background:  rgba(245, 247, 252, 1);
 `;
-export const Header=styled.h1`
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 38px;
-text-align: center;
-color: #0D263B;
-margin-bottom: 10px;
-`;
-export const Content=styled.p`
-margin-bottom: 50px;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-color: #696969;
-`;
 export const WrapCard=styled.div`
 display: flex;
 justify-content: space-between;

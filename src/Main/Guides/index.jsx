@@ -1,6 +1,12 @@
 import React from 'react'
 import { Wrap, Span, Header, Button, Container, Info, InfoWrap } from "./style";
 const index = () => {
+  const data=[
+    { price: '66.180', title: 'Homes for sale' },
+    { price: '4.809', title: 'Open houses' },
+    { price: '30.469', title: 'Recently sold' },
+    { price: '2.919', title: 'Price reduced' },
+  ]
   return (
     <Container>
     <Wrap>
@@ -9,22 +15,9 @@ const index = () => {
       <Button>READ MORE</Button>
     </Wrap>
     <InfoWrap>
-        <Info>
-          <h1>66.180</h1>
-          <p>Homes for sale</p>
-        </Info>
-        <Info>
-          <h1>66.180</h1>
-          <p>Homes for sale</p>
-        </Info>
-        <Info>
-          <h1>66.180</h1>
-          <p>Homes for sale</p>
-        </Info>
-        <Info>
-          <h1>66.180</h1>
-          <p>Homes for sale</p>
-        </Info>
+        {
+      data.map(({ price, title }, i) => <Info key={i}><h1>{price}</h1><p>{title}</p></Info>)
+        }
     </InfoWrap>
     </Container>
   )

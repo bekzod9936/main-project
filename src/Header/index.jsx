@@ -1,75 +1,66 @@
-import React, { Component } from 'react';
-import search1 from '../assets/icon/search1.png';
-import search2 from '../assets/icon/search2.png';
-import setting from '../assets/icon/setting.png';
-import logo from '../assets/icon/logo.png';
-import down from '../assets/icon/down.png';
-import phone from '../assets/icon/phone.png';
-import user from '../assets/icon/user.png';
-import group from '../assets/icon/Group.png';
-import { Container, Title, Text, SearchTitle, Search, Select, Wrap, Button, WrapInput,  Border,   ButtonWrap, Ul, Navbar, Logo, Bar} from './style'
+import React from 'react'
+import { Wrap, Inner, Text, Title, Ul, Li, Search, Section, SearchTitle, Input, Select, Blopp, Button, NavBar, Nav, Li1, Down, Tel, Span, Add } from "./style";
+import { ReactComponent as Logo } from '../assets/icon/logo.svg'
+import { ReactComponent as Phone } from '../assets/icon/header/phone.svg'
+import { ReactComponent as Plus } from '../assets/icon/header/plus.svg'
+import { ReactComponent as Setting } from '../assets/icon/header/setting.svg'
+import { ReactComponent as User } from '../assets/icon/header/user.svg'
+import { ReactComponent as Wlop } from '../assets/icon/header/whitelop.svg'
 
-export default class index extends Component {
-  render() {
-    return (
-      <Container>
-        <Navbar>
-          <Logo>
-            <img src={logo} />
-          </Logo>
-          <Bar>
-            <ul>
-              <li><a>Home<img src={down} /></a></li>
-              <li><a>Listing <img src={down} /></a></li>
-              <li><a>Property <img src={down} /></a></li>
-              <li><a>Pages <img src={down} /></a></li>
-              <li><a>Contact</a></li>
-            </ul>
-            <img src={phone} />
-            <p>(+88) 1990 6886</p>
-            <img src={user} className="user" />
-            <button><img src={group} />Create Listing</button>
-          </Bar>
-        </Navbar>
+
+const index = () => {
+  return (
+    <Wrap>
+      <NavBar>
+        <Logo />
+        <Nav>
+          <Ul>                                    
+            <Li1><a>Home <Down /></a></Li1>
+            <Li1><a>Listing <Down /></a></Li1>
+            <Li1><a>Property <Down /></a></Li1>
+            <Li1><a>Pages <Down /></a></Li1>
+            <Li1><a>Contact <Down /></a></Li1>
+          </Ul>
+          <Tel>
+            <Phone /> <Span>(+88) 1990 6886</Span>
+        </Tel>
+        <User style={{margin: '20px'}} />
+          <Add><Plus /><Span>Create Listing</Span> </Add>
+        </Nav>
+        </NavBar>
+      <Inner>
         <Text>It's great to be home!</Text>
         <Title>Find Your Perfect Home</Title>
-        <Ul>
-          <li>Buy</li>
-          <li><Border color='#FFFFFF'>Rent</Border></li>
-          <li>Sold</li>
+        <Ul m>
+          <Li>Buy</Li>
+          <Li active>Rent</Li>
+          <Li>Sold</Li>
         </Ul>
         <Search>
-          <Wrap>
+          <Section w="190px">
             <SearchTitle>TYPE</SearchTitle>
-            <Border color='#E6E9EC'>
-              <Select>
-                <option>Property Type</option>
-              </Select>
-            </Border>
-          </Wrap>
-          <Wrap>
+            <Select>
+              <option>Property Type</option>
+            </Select>
+          </Section>
+          <Section w='190px'>
             <SearchTitle>LOCATION</SearchTitle>
-            <Border color='#E6E9EC'>
-              <Select>
-                <option>All Cities</option>
-              </Select>
-            </Border>
-          </Wrap>
-          <WrapInput>
+            <Select>
+              <option>All Cities</option>
+            </Select>
+            </Section>
+          <Section w='300px' p>
             <SearchTitle>SEARCH</SearchTitle>
-            <Border color='#E6E9EC'>
-              <input placeholder='Enter keywords' /><img src={search1} />
-            </Border>
-          </WrapInput>
-          <ButtonWrap>
-            <img src={setting} />
-            <p>Advanced <br />Search</p>
-            <Button><img src={search2} />SEARCH</Button>
-          </ButtonWrap>
+            <Input type='text' placeholder="Enter keywords" ></Input>
+            <Blopp />
+            </Section>
+          <Section w='100px' besh flex><Setting style={{marginRight: '10px'}} /><div>Advanced
+Search</div></Section>
+          <Button><Wlop style={{marginRight: "10px"}} />SEARCH</Button>
         </Search>
-
-      </Container>
-    )
-  }
+      </Inner>
+    </Wrap>
+  )
 }
 
+export default index

@@ -1,5 +1,6 @@
-import React from 'react'
-import { Conatiner, Header, Content, Card, Info, Profil, WrapCard } from './style'
+import React from 'react';
+import { P, H } from "../main";
+import { Conatiner,  Card, Info, Profil, WrapCard } from './style'
 
 const index = () => {
   const data = [{ info: " “ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “", title: "Marvin McKinney", job: "Designer"  } ,
@@ -8,8 +9,8 @@ const index = () => {
     { info: " “ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “", title: "Guy Hawkins", job: "Developer" }, ]
   return (
     <Conatiner>
-      <Header>Our Testimonials</Header>
-      <Content>Lorem ipsum dolor sit amet, consectetur adipisicing elit</Content>
+      <H>Our Testimonials</H>
+      <P m='50px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
       <WrapCard>
         {
           data.map(({info , title , job }, i) => <Card><Info>{info}<Profil></Profil></Info>

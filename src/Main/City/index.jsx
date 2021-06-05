@@ -1,5 +1,6 @@
-import React from 'react'
-import { Container, Header, Info, Wrapper } from "./style";
+import React from 'react';
+import { P, H } from "../main";
+import { Container, Wrapper } from "./style";
 const index = () => {
   const data=[
     { country: 'Los Angeles', property: "15 Properties"},
@@ -12,8 +13,8 @@ const index = () => {
   ];
   return (
     <Container>
-      <Header>Explore Cities</Header>
-      <Info>Lorem ipsum dolor sit amet, consectetur adipisicing elit</Info>
+      <H>Explore Cities</H>
+      <P m='40px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
       <Wrapper>
         {
           data.map(({country , property} , i) => <div key={i}>

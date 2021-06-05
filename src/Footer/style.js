@@ -1,237 +1,211 @@
-import styled ,  {css} from 'styled-components';
+import styled from 'styled-components';
 import back from '../assets/images/fback.png';
-import bhover from '../assets/icon/socialhover.png';
-import Logoback from '../assets/images/footlogo.png'
-import { Container } from '../Header/style';
-const flex=css`
-display: flex;
-`;
-const just = css`
-justify-content: center;
-`;
-const align = css`
-align-items: center;
-`;
-export const Section1=styled.div`
-${flex}
-${just}
-${align}
+import Logoback from '../assets/images/footlogo.png';
+import bhover from '../assets/images/socialhover.png';
+
+const getMargin = ({m}) => {
+  switch (m) {
+    case '75': return '75px';
+    case '115': return '115px';
+    case '95': return '95px';
+    case '150': return '150px';
+    default: return 0;
+  }
+}
+
+export const Container=styled.div`
 width: 100%;
-height: 290px;
-flex-direction: column;
+margin: 0 auto;
+`;
+export const Section1 = styled.div`
+width: 100%;
+padding: 70px 0;
 background-image: url(${back});
 background-size: 100% 100%;
 background-color: #0061DF;
-& > h1{
+display: flex;
+align-items: center;
+flex-direction: column;
+`;
+export const Header=styled.h1`
 font-style: normal;
 font-weight: 600;
 font-size: 30px;
 line-height: 38px;
 color: #FFFFFF;
-margin-bottom: 15px;
-}
-& > p{
- font-style: normal;
+`;
+export const Content1=styled.p`
+font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 color: #FFFFFF;
-margin-bottom: 25px;
-}
-& > button{
-  width: 198px;
-  height: 55px;
-  background: #FFFFFF;
-  border-radius: 3px;
+margin: 15px 0 25px;
+`;
+export const Button=styled.button`
+border: 0;
+width: 200px;
+height: 55px;
+background: #FFFFFF;
+border-radius: 3px;
+display: flex;
+justify-content: center;
+align-items: center;
 font-style: normal;
 font-weight: 600;
 font-size: 13px;
 line-height: 17px;
 text-transform: uppercase;
 color: #0061DF;
-  border:none;
-}
 `;
-
 
 
 export const Section2=styled.div`
 width: 100%;
-height: 605px;
 background-color: #0D263B;
-background-repeat: no-repeat;
-background-position: 20px , 20px;
-background-size: 432px 520px;
 background-image: url(${Logoback});
-ul{
-  list-style-type: none;
- }
+background-repeat: no-repeat;
+background-position: 50px , 45px;
+background-size: 432px 520px;
 `;
+
 export const Up = styled.div`
 width: 100%;
-height: 500px;
-${flex}
-${just}
-${align}
+padding: 100px 225px 115px;
+display: flex;
 `;
-export const Content = styled.div`
-width: 1470px;
-height: 285px;
-${flex}
-`;
-export const Title = styled.h1`
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-color: #FFFFFF;
-margin-bottom: 40px;
-`;
-export const Contact= styled.div`
+
+export const Contact = styled.div`
 width: 295px;
 height: 245px;
-div{
-  width: 256px;
-ul:first-child{
-  li{
-    font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 26px;
-color: #FFFFFF;
-
-    ${flex}
-    margin-bottom: 15px;
-    img{
-        vertical-align: top;
-        margin-right: 20px;
-        width: 18px;
-        height: 18px;
-    }
-  }
-}
+margin-right: ${getMargin};
+padding-right: 50px;
 ul:last-child{
-  ${flex}
-  justify-content:space-between;
-  width: 80%;
-  margin-top: 30px;
-  margin-left: -15px;
-  li{
-        cursor: pointer;
-    ${flex}
-  ${just}
-  ${align}
-  padding: 15px;
-  }
-  li:hover{
-  background-image: url(${bhover});
-  background-size: 100% 100%;
+display: flex;
+margin-top: 20px;
+margin-left: -10px;
+li{
+  margin-right: 25px;
+   padding: 10px;
+  :hover{
+    background-image: url(${bhover});
   }
 }
-}
-
-`;
-export const List = styled.div`
-width:40%;
-${flex}
-justify-content: space-around;
-div{
-  ul{
-    li{
-      font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 40px;
-color: #FFFFFF;
-      a{
-        width: 100%;
-          padding-bottom: 5px;
-       &:hover{
-        border-bottom: 1px solid white;
-      }
-      }
-    
-    }
-  }
 }
 `;
 
-export const Sub= styled.div`
-width: 30%;
+export const Discover = styled.div`
+width: 75px;
+height: 205px;
+margin-right: ${getMargin};
+`;
+export const Category = styled.div`
+width: 130px;
+height: 285px;
+margin-right: ${getMargin};
+`;
+export const Links= styled.div`
+width: 125px;
+height: 285px;
+margin-right: ${getMargin};
+`;
+export const Subscribe = styled.div`
+width: 470px;
+height: 160px;
 p{
-  font-family: Cerebri Sans;
-font-style: normal;
+  font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 color: #FFFFFF;
 margin-bottom: 30px;
 }
-div{
-  background: white;
-  width: 470px;
-  height: 60px;
-  padding: 5px;
-  ${flex}
-  ${just}
-  ${align}
-  input{
-    width: 90%;
-    border: none;
-    height: 40px;
-  }
-  button{
-    width: 50px;
-    height: 50px;
-    background: #0061DF;
-    border-radius: 3px;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    ${flex}
-    ${align}
-    ${just}
-    img{
-      width: 20px;
-      height: 20px;
-    }
-  }
+`;
+export const Input=styled.input`
+width: 100%;
+padding: 20px 50px 20px 5px;
+outline: none;
+`;
+export const Span=styled.div`
+width: 100%;
+position: relative;
+background: #FFFFFF;
+border-radius: 3px;
+img{
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  padding: 15px;
+  background-color: #0061DF;
 }
 `;
 
+export const Title=styled.h1`
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+margin-bottom: 25px;
+margin-right: ${getMargin}
+`;
 
-
-
-export const Down = styled.div`
-width: 100%; 
-height: 100px;
-border-top: 1px solid rgba(255, 255, 255, 0.15);
-& > div{
-  width: 1470px;
-  height:100%;
-  ${flex}
-  ${align}
-  justify-content: space-between;
-margin: 0 auto;
-& > ul{
-  ${flex}
-  li{
-    font-style: normal;
+export const Li1 = styled.li`
+font-style: normal;
 font-weight: normal;
 font-size: 14px;
-line-height: 18px;
-text-align: right;
+line-height: 26px;
 color: #FFFFFF;
-margin-right: 15px;
-
+display: flex;
+align-items: flex-start;
+margin-bottom: 10px;
+ img{
+    margin-right: 20px;
   }
+`;
+export const Li2 = styled.li`
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 40px;
+color: #FFFFFF;
+:hover{
+  border-bottom: 1px solid white;
 }
-& > p{
+`;
+export const Down = styled.div`
+width: 100%;
+border-top: 1px solid  rgba(255, 255, 255, 0.15);
+p{
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 color: #FFFFFF;
 }
+ul{
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  li{
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+text-align: right;
+color: #FFFFFF;
+  }
 }
 `;
+export const Wrap=styled.div`
+margin: 0 225px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 0;
+`;
+
+
+
+
+

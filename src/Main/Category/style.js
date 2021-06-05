@@ -8,32 +8,13 @@ align-items: center;
 
 export const Container = styled.div`
 width: 100%;
-height:640px;
+padding: 100px 225px;
 ${flex}
 `;
 export const Wrap = styled.div`
-width: 1520px;
-height:440px;
+width: 100%;
 ${flex}
 flex-direction: column;
-h6{
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-line-height: 38px;
-text-align: center;
-color: #0D263B;
-margin-bottom: 10px;
-}
-span{
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-color: #696969;
-margin-bottom: 35px;
-}
 `;
 export const Card = styled.div`
 width: 270px;
@@ -53,8 +34,7 @@ color: #FFFFFF;
 }
 `;
 export const WrapperCard=styled.div`
-width: 1465px;
-height:320px;
+width: 100%;
 display: flex;
 justify-content: space-between;
 position: relative;

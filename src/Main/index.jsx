@@ -1,5 +1,5 @@
 import React from 'react'
-import Carusel from "./Carusel";
+import Carusel1 from "./Carusel/Carusel1";
 import Choose from "./Choose";
 import Category from "./Category";
 import Guides from "./Guides";
@@ -13,7 +13,7 @@ import Agent from "./Agent";
 const index = () => {
   return (
     <div>
-      <Carusel />
+      <Carusel1 />
       <Choose />
       <Category />
       <Guides />

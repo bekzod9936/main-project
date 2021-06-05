@@ -1,9 +1,10 @@
-import React from 'react'
-import { Container, Card, WrapperCard } from './style'
-import discord from '../../assets/icon/choose/discord.png'
-import house from '../../assets/icon/choose/house.png'
-import calculator from '../../assets/icon/choose/calculator.png'
-import maps from '../../assets/icon/choose/maps.png'
+import React from 'react';
+import { Container, Card, WrapperCard } from './style';
+import { P, H } from "../main";
+import discord from '../../assets/icon/choose/discord.svg'
+import house from '../../assets/icon/choose/house.svg'
+import calculator from '../../assets/icon/choose/calculator.svg'
+import maps from '../../assets/icon/choose/maps.svg'
 const index = () => {
   const data=[
     { col: '#0061DF' , image:discord, title:'Trusted By Thousands' , info:'With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.' },
@@ -13,8 +14,8 @@ const index = () => {
   ]
   return (
     <Container>
-      <h6>Why Choose Us</h6>
-      <span>We provide full service at every step</span>
+      <H>Why Choose Us</H>
+      <P m='50px'>We provide full service at every step</P>
       <WrapperCard>
         {
           data.map(({ col, image, title, info }, i) => <Card key={i} color={col}>

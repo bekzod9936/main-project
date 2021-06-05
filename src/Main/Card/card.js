@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
-import light from '../../assets/icon/icon-card/light.png';
-import dark from '../../assets/icon/icon-card/dark.png';
+
 export const Card=styled.div`
 background: #FFFFFF;
 border: 1px solid #E6E9EC;
@@ -16,13 +15,7 @@ export const CardImg = styled.div`
 width: 100%;
 height: 220px;
 position: relative;
-img{
-  position: absolute;
-  right: 0;
-  bottom: -30px;
-}
-
-background-image: url(${light});
+background-color: grey;
 display: flex;
 padding: 30px;
 justify-content: space-between;
@@ -103,9 +96,17 @@ div:last-child{
   display: flex;
   img{
     align-self: center;
+    path{
+      fill: red;
+    }
   }
   img:nth-child(2){
     margin: 0 20px;
+  }
+  img:last-child{
+    background-color: #F6F8F9;
+    padding: 15px;
+    border-radius: 50%;
   }
 }
 `;
@@ -118,5 +119,23 @@ export const CardInfo = styled.div`
    width: 20px;
    height: 20px;
    margin-bottom: 7px;
+  }
+  `;
+
+  export const WrapImg=styled.div`
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(13, 38, 59, 0.2);
+  border-radius: 50%;
+  padding: 4px;
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  div{
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
   }
   `;

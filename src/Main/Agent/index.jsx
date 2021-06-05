@@ -1,9 +1,10 @@
 import React    from 'react'
-import { Container, Title, Content, Wrap, Card, CardContent, CardTitle, CardFooter , } from "./style";
-import { ReactComponent as Facebook}  from "../../assets/icon/agent/facebook.svg";
-import { ReactComponent as Twitter }   from "../../assets/icon/agent/twitter.svg";
-import { ReactComponent as Instagram }   from "../../assets/icon/agent/ins.svg";
-import { ReactComponent as Inlink }   from "../../assets/icon/agent/in.svg";
+import { Container, Wrap, Card, CardContent, CardTitle, CardFooter , } from "./style";
+import { P, H } from "../main";
+import { ReactComponent as Facebook}  from "../../assets/icon/facebook.svg";
+import { ReactComponent as Twitter }   from "../../assets/icon/twitter.svg";
+import { ReactComponent as Instagram }   from "../../assets/icon/ins.svg";
+import { ReactComponent as Inlink }   from "../../assets/icon/in.svg";
 const index = () => {
   const data=[
     { user: 'Robert Fox', job: 'Lead Designer' } ,
@@ -14,8 +15,8 @@ const index = () => {
   ]
   return (
     <Container>
-      <Title>Meet Our Agents</Title>
-      <Content>Lorem ipsum dolor sit amet, consectetur adipisicing elit</Content>
+      <H>Meet Our Agents</H>
+      <P m='80px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
       <Wrap>
          {
           data.map(({ user, job }, i) => <Card key={i}>

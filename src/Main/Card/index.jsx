@@ -1,15 +1,14 @@
 import React from 'react'
-import { Card, CardBody, CardImg, CardFooter, CardInfo } from './card'
-import add from '../../assets/icon/icon-card/add.png'
-import bath1 from '../../assets/icon/icon-card/bath.png'
-import bed1 from '../../assets/icon/icon-card/bed.png'
-import car from '../../assets/icon/icon-card/car.png'
-import love from '../../assets/icon/icon-card/love.png'
-import photo from '../../assets/icon/icon-card/photo.png'
-import play from '../../assets/icon/icon-card/play-button.png'
-import profile from '../../assets/icon/icon-card/profile.png'
-import resize from '../../assets/icon/icon-card/resize.png'
-import ruler1 from '../../assets/icon/icon-card/ruler.png'
+import { Card, CardBody, CardImg, CardFooter, CardInfo, WrapImg } from './card'
+import add from '../../assets/icon/icon-card/add.svg'
+import bath1 from '../../assets/icon/icon-card/bath.svg'
+import bed1 from '../../assets/icon/icon-card/bed.svg'
+import car from '../../assets/icon/icon-card/car.svg'
+import love from '../../assets/icon/icon-card/love.svg'
+import photo from '../../assets/icon/icon-card/photo.svg'
+import play from '../../assets/icon/icon-card/play-button.svg'
+import resize from '../../assets/icon/icon-card/resize.svg'
+import ruler1 from '../../assets/icon/icon-card/ruler.svg'
 
 const index = (props) => {
   const { title, country, bed, bath, garage, ruler, mo, price }=props.value;
@@ -18,7 +17,7 @@ const index = (props) => {
       <Card>
         <CardImg>
           <button>FEATURED</button>
-          <img src={profile} />
+          <WrapImg><div></div></WrapImg>
           <button>FOR SALE</button>
         </CardImg>
         <CardBody>

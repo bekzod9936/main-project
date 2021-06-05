@@ -1,4 +1,5 @@
 import React from 'react'
+import { P, H } from "../main";
 import { Container, Title, Content, CardWrap, Left, Right , Icon } from './style'
 import Card from "../Card";
 const index = () => {
@@ -12,9 +13,8 @@ const index = () => {
   ];
   return (
     <Container>
-   
-      <Title>Recent Properties for Rent</Title>
-      <Content>Lorem ipsum dolor sit amet, consectetur adipisicing elit</Content>
+      <H>Recent Properties for Rent</H>
+      <P m='40px'>Lorem ipsum dolor sit amet, consectetur adipisicing elit</P>
       <CardWrap>
         <Icon>
           <Left />
