@@ -33,6 +33,12 @@ font-weight: 600;
 font-size: 30px;
 line-height: 38px;
 color: #FFFFFF;
+margin-bottom: 15px;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+font-size: 20px;
+line-height: 25px;
+margin-bottom: 10px;
+}
 `;
 export const Content1=styled.p`
 font-style: normal;
@@ -40,7 +46,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 18px;
 color: #FFFFFF;
-margin: 15px 0 25px;
+margin-bottom: 25px;
 `;
 export const Button=styled.button`
 border: 0;
@@ -65,14 +71,22 @@ width: 100%;
 background-color: #0D263B;
 background-image: url(${Logoback});
 background-repeat: no-repeat;
-background-position: 50px , 45px;
+background-position: 50px 45px;
 background-size: 432px 520px;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+background-size: 324px 390px;
+background-position: 20px  45px;
+}
 `;
 
 export const Up = styled.div`
 width: 100%;
 padding: 100px 225px 115px;
 display: flex;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+padding: 50px 20px;
+flex-direction: column;
+}
 `;
 
 export const Contact = styled.div`
@@ -92,22 +106,34 @@ li{
   }
 }
 }
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  margin-bottom: 50px;
+}
 `;
 
-export const Discover = styled.div`
+export const Discover=styled.div`
 width: 75px;
 height: 205px;
 margin-right: ${getMargin};
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  margin-bottom: 50px;
+}
 `;
 export const Category = styled.div`
 width: 130px;
 height: 285px;
 margin-right: ${getMargin};
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  margin-bottom: 50px;
+}
 `;
 export const Links= styled.div`
 width: 125px;
 height: 285px;
 margin-right: ${getMargin};
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  margin-bottom: 50px;
+}
 `;
 export const Subscribe = styled.div`
 width: 470px;
@@ -119,6 +145,12 @@ font-size: 14px;
 line-height: 18px;
 color: #FFFFFF;
 margin-bottom: 30px;
+}
+@media only screen and (min-width: 414px) and (max-width: 600px){
+width: 375px;
+p{
+  margin-bottom: 20px;
+}
 }
 `;
 export const Input=styled.input`
@@ -203,6 +235,23 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 30px 0;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  margin: 0 35px;
+  padding: 20px 0;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  p{
+ grid-row-start: 3;
+ grid-row-end: 4;
+width: 200px;
+text-align: center;
+  }
+  ul{
+    margin: 20px
+  }
+  
+}
 `;
 
 

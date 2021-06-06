@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrap, Inner, Text, Title, Ul, Li, Search, Section, SearchTitle, Input, Select, Blopp, Button, NavBar, Nav, Li1, Down, Tel, Span, Add } from "./style";
+import { Wrap, Inner, Text, Title, Ul, Ul1, Li, Search, Section, SearchTitle, Input, Select, Blopp, Button, NavBar, Nav, Li1, UserLogo , Down, Tel, Span, Add, BarLogo } from "./style";
 import { ReactComponent as Logo } from '../assets/icon/logo.svg'
 import { ReactComponent as Phone } from '../assets/icon/header/phone.svg'
 import { ReactComponent as Plus } from '../assets/icon/header/plus.svg'
@@ -10,8 +10,9 @@ import { ReactComponent as Wlop } from '../assets/icon/header/whitelop.svg'
 
 const index = () => {
   return (
-    <Wrap>
-      <NavBar>
+    <Wrap c='cd'>
+      <NavBar cd>
+        <BarLogo />
         <Logo />
         <Nav>
           <Ul>                                    
@@ -24,21 +25,21 @@ const index = () => {
           <Tel>
             <Phone /> <Span>(+88) 1990 6886</Span>
         </Tel>
-        <User style={{margin: '20px'}} />
-          <Add><Plus /><Span>Create Listing</Span> </Add>
+          <UserLogo  />
+          <Add c='cb'><Plus /><Span>Create Listing</Span> </Add>
         </Nav>
         </NavBar>
       <Inner>
         <Text>It's great to be home!</Text>
         <Title>Find Your Perfect Home</Title>
-        <Ul m>
+        <Ul1 m>
           <Li>Buy</Li>
           <Li active>Rent</Li>
           <Li>Sold</Li>
-        </Ul>
+        </Ul1>
         <Search>
           <Section w="190px">
-            <SearchTitle>TYPE</SearchTitle>
+            <SearchTitle c='cd'>TYPE</SearchTitle>
             <Select>
               <option>Property Type</option>
             </Select>

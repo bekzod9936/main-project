@@ -15,6 +15,7 @@ body {
     box-sizing: border-box;
     font-family: Cerebri Sans;
     list-style-type: none;
+    font-style: normal;
 }
 button{
   border:none;
@@ -23,4 +24,17 @@ button{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+:root{
+--blue: #0061DF;
+--dark: #0D263B;
+--red: #CC5040;
+--white:  #FFFFFF;
+--lightblue: #BDD0DD;
+--iconcolor:#696969;
+--bg1:#F6F8F9;
+--bg2:#F5F7FC;
+--text:#696969;
+--border:#E6E9EC;
+--box:rgba(13, 38, 59, 0.1);
 }
