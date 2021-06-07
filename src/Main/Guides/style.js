@@ -10,6 +10,12 @@ export const InfoWrap = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 60px  470px ; 
+@media only screen and (min-width: 414px) and (max-width: 600px){
+margin: 45px  50px ;
+display: grid;
+grid-template-columns: auto auto;
+grid-column-gap: 95px;
+}
 `;
 export const Info= styled.div`
 h1{
@@ -29,6 +35,12 @@ text-align: center;
 text-transform: uppercase;
 color: #696969;
 }
+@media only screen and (min-width: 414px) and (max-width: 600px){
+h1{
+font-size: 24px;
+line-height: 30px;
+}
+}
 `;
 
 export const Wrap=styled.div`
@@ -38,6 +50,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 200px 0 ;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+padding: 125px 20px;
+}
 `;
 export const Span= styled.span`
 font-style: normal;
@@ -56,6 +71,10 @@ line-height: 45px;
 text-align: center;
 color: #FFFFFF;
 margin: 15px 0;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+font-size: 18px;
+line-height: 23px;
+}
 `;
 export const Button= styled.button`
 width: 176px;

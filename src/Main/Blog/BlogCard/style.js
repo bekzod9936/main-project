@@ -7,6 +7,9 @@ background: #FFFFFF;
 border-radius: 3px;
 box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
 border-radius: 3px;
+@media only screen and (min-width: 414px) and (max-width: 600px ){
+  margin-bottom: 10px;
+}
 `;
 export const ImgWarp= styled.div`
 width: 100%;

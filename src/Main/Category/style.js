@@ -10,6 +10,9 @@ export const Container = styled.div`
 width: 100%;
 padding: 100px 225px;
 ${flex}
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  padding: 50px 20px;
+}
 `;
 export const Wrap = styled.div`
 width: 100%;

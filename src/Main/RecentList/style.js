@@ -26,9 +26,16 @@ box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
 export const Container=styled.div`
 width:100%;
 padding: 100px 200px;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  padding: 50px 20px;
+}
 `;
 export const CardWrap = styled.div`
 display: flex;
 justify-content: space-between;
 position: relative;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  flex-direction: column;
+  align-items: center;
+}
 `;

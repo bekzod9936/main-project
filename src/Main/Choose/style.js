@@ -12,6 +12,9 @@ width: 100%;
 padding: 100px 225px;
 ${flex}
 flex-direction: column;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  padding: 50px 20px;
+}
 `;
 export const Card=styled.div`
 width: 345px;
@@ -45,9 +48,16 @@ line-height: 24px;
 text-align: center;
 color: #696969;
 }
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  margin-bottom: 20px;
+}
 `;
 export const WrapperCard=styled.div`
 width: 100%;
 display: flex;
 justify-content: space-between;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  flex-direction: column;
+  align-items: center;
+}
 `;

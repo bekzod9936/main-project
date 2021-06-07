@@ -5,10 +5,17 @@ width: 100%;
 padding: 100px 225px;
 background-image: url(${Say});
 background:  rgba(245, 247, 252, 1);
+@media only screen and (min-width: 414px) and (max-width:600px){
+  padding: 50px 20px;
+}
 `;
 export const WrapCard=styled.div`
 display: flex;
 justify-content: space-between;
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  flex-direction: column;
+  align-items: center;
+}
 `;
 export const Card=styled.div`
 width: 345px;
