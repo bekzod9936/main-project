@@ -25,6 +25,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #FF0000;
+}
 :root{
 --blue: #0061DF;
 --dark: #0D263B;

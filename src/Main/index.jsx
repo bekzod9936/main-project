@@ -13,15 +13,15 @@ import Agent from "./Agent";
 const index = () => {
   return (
     <div>
-      <Carusel1 />
-      <Choose />
+      {/* <Carusel1 /> */}
+      {/* <Choose /> */}
       <Category />
-      <Guides />
-      <RecentList />
-      <Say />
-      <City />
-      <Agent />
-      <Blog />
+      {/* <Guides /> */}
+      {/* <RecentList /> */}
+      {/* <Say /> */}
+      {/* <City /> */}
+      {/* <Agent /> */}
+      {/* <Blog /> */}
     </div>
   )
 }

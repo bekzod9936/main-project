@@ -3,12 +3,15 @@ import styled, { css } from 'styled-components';
 export const Card=styled.div`
 background: #FFFFFF;
 border: 1px solid #E6E9EC;
-box-sizing: border-box;
 border-radius: 3px;
 width:345px;
 height:430px;
 &:hover{
 box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
+}
+margin: 0 auto;
+@media only screen and (max-width: 600px){
+  width: 375px;
 }
 `;
 export const CardImg = styled.div`

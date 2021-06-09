@@ -16,16 +16,15 @@ function App() {
   } , [])
   return (
     <Container wid={w}>
-     <Header />
+     {/* <Header /> */}
       <Main />
-     <Footer />
-      <Up><img src={down} /></Up>
+     {/* <Footer /> */}
+      {/* <Up><img src={down} /></Up> */}
     </Container>
   );
 }
 
 export default App;
-
 
 const Container=styled.div`
 width: 1920px;

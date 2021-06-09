@@ -13,7 +13,6 @@ import ruler1 from '../../assets/icon/icon-card/ruler.svg'
 const index = (props) => {
   const { title, country, bed, bath, garage, ruler, mo, price }=props.value;
   return (
-    <>
       <Card>
         <CardImg>
           <button>FEATURED</button>
@@ -54,7 +53,6 @@ const index = (props) => {
           </div>
         </CardFooter>
       </Card>
-    </>
   )
 }
 

@@ -9,6 +9,7 @@ align-items: center;
 export const Container = styled.div`
 width: 100%;
 padding: 100px 225px;
+position: relative;
 ${flex}
 @media only screen and (min-width: 414px) and (max-width: 600px){
   padding: 50px 20px;
@@ -34,6 +35,10 @@ font-weight: 600;
 font-size: 18px;
 line-height: 23px;
 color: #FFFFFF;
+}
+@media only screen and (min-width: 414px) and (max-width: 600px){
+  width: 180px;
+height: 260px;
 }
 `;
 export const WrapperCard=styled.div`
